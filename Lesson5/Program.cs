@@ -14,7 +14,7 @@ namespace Lesson5
             string[] separators = { " " };
             Console.WriteLine("Введите произвольный набор чисел от 0 до 255");
             string strNum = Convert.ToString(Console.ReadLine());
-            string[] numStrArr = strNum.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            string[] numStrArr = strNum.Split(separators, StringSplitOptions.RemoveEmptyEntries); 
             int n = numStrArr.Length;
             byte[] arrNum = new byte[n];
             for (int i = 0; i < numStrArr.Length; i++)
